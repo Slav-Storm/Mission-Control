@@ -122,9 +122,9 @@ observer histories, not a lossless in-game event bus.
 
 ## Validated command interface
 
-The separate local CLI file transport is now enabled for SURVEY_AREA. Mission
+The separate local CLI file transport is now enabled for SURVEY_AREA and the bounded quest-staging resource operations. Mission
 Control validates requests, reserves an existing robot job and records durable
 lifecycle and completion evidence. The browser and bridge remain read-only.
 See [CONTROL.md](CONTROL.md) for submission, querying, validation, idempotence,
-restart behaviour and current recovery limits. Other strategic operations remain
-planned. No HTTP POST or browser command channel has been introduced.
+restart behaviour and current recovery limits. See [QUESTS.md](QUESTS.md) for installed quest queries, inventory planning and
+physical reservation semantics. More general strategic operations remain planned. No HTTP POST or browser command channel has been introduced.

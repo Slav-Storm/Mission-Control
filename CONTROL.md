@@ -1,8 +1,9 @@
 # Validated local objectives — command loop v1
 
 Mission Control now accepts **SURVEY_AREA**, a bounded horizontal inspection survey
-that retraces its route and returns to its starting pose. No digging, item use or
-arbitrary turtle instructions are exposed. Other strategic operations remain planned.
+that retraces its route and returns to its starting pose. Survey jobs do not dig. The quest-staging extension adds bounded physical timber,
+furnace and staging objectives; see [QUESTS.md](QUESTS.md). Arbitrary turtle
+instructions are not exposed through the validated interface.
 `status` remains a read operation rather than a robot job.
 
 The executable source remains in the local installation; this public repository is
@@ -115,6 +116,16 @@ because they are stored by Mission Control. On a new bridge generation, take a
 fresh snapshot; command history remains available even if old feed events expired.
 
 General robot actions may still be missed between telemetry samples. The evidence
-does not claim a lossless physical trace or an autonomous quest planner. The next
-stage should add one bounded production/logistics objective with equally explicit
-input validation and delivered-output evidence, using the same scheduler.
+does not claim a lossless physical trace or an autonomous quest planner. The quest-staging extension adds bounded production and logistics operations with
+physical inventory predicates through this same scheduler.
+
+## Resource objective drafts
+
+`draft-resource OPERATION ROBOT_ID PARAMETERS_JSON` creates an unsubmitted level-3
+envelope for STAGE_RESOURCE, ACQUIRE_RESOURCE or PRODUCE_ITEM. Submit and query it
+with the same commands above. Quest staging takes `questId`, `storageId` and an
+observed adjacent `port` (x/y/z). Timber acquisition takes the spruce-log `item`,
+`count`, observed approach `goal` and `heading`. The initial iron-production
+operation takes `item`, `count` and known furnace `storageId`. Mission Control
+validates live prerequisites and rejects unsupported variants. Parameters describe
+objectives; they cannot contain arbitrary action sequences.

@@ -142,3 +142,15 @@ The active run is validated before loading this projection. The same API now
 provides run-scoped day reconstruction and full archived terminal records; the
 CLI adds `runs`, `history` and `archived-record`. These historical reads never
 replace current state or enter the planner. See [RUNS-HISTORY.md](RUNS-HISTORY.md).
+
+## Technology target planning
+
+`node viewer/agent.mjs plan-technology-target ROBOT_11` reads
+`GET /api/v1/technology?target=ROBOT_11`. This pure projection joins installed
+recipe evidence, quest prerequisites and current run-scoped Mission Control
+state. It returns a bounded dependency graph, explicit unknowns, reserved and
+available stock, capability evidence, human quest boundaries and an advisory
+next frontier. It creates no physical jobs. Request `PLAN_PRODUCTION` through
+the existing validated command interface before execution. See
+[TECHNOLOGY-PLANNING.md](TECHNOLOGY-PLANNING.md) for installed overrides, scope,
+physical verification and remaining industrial blockers.

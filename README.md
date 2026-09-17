@@ -84,3 +84,11 @@ Files named `day-NNNNN.md` describe completed Minecraft days. Recording started
 partway through day 4; earlier daily history is not invented. An in-game recorder
 detects actual day changes, and a separate local automation checks every five
 minutes for reports to upload. GitHub is never the live telemetry transport.
+
+## Technology development
+
+Robot 11 remains blocked by its legitimate industrial and commissioning chain.
+The local interface now provides bounded technology-target planning using
+installed recipes, pack overrides, quest prerequisites and current colony
+capabilities. See [TECHNOLOGY-PLANNING.md](TECHNOLOGY-PLANNING.md) for the current
+headless development checkpoint, verified recovery infrastructure and limits.

@@ -65,6 +65,13 @@ quest reservations remain intact and unsubmitted. The first supervised operating
 window is stopped; the observer and archive remain live. Fuel independence is not
 yet established. See [OPERATIONS-VERIFICATION.md](OPERATIONS-VERIFICATION.md).
 
+The infrastructure checkpoint added two robot-built chests and verified transfers
+across multiple physical inventories. Storage now has 81 measured slots. Robot 11
+remains blocked by the installed HV component chain, commissioning support and
+sustainable fuel capacity; no additional robot has been manufactured. Both staged
+quests remain protected. See [INFRASTRUCTURE-VERIFICATION.md](INFRASTRUCTURE-VERIFICATION.md)
+for physical evidence, preserved failures, recovery and current limits.
+
 ## Progress reports
 
 The development colony now has a persistent run identity. Portable quest and

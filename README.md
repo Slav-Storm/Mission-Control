@@ -12,8 +12,10 @@ release. Detailed live telemetry, coordinates, routes, world saves and logs stay
 
 - [Challenge rules and operating principles](CHALLENGE.md)
 - [Local 3D observer and telemetry architecture](ARCHITECTURE.md)
-- [Headless state API, event protocol and planned command boundary](HEADLESS.md)
-- [Verification results and current limitations](VERIFICATION.md)
+- [Headless state API and event protocol](HEADLESS.md)
+- [Validated command submission and recovery semantics](CONTROL.md)
+- [Headless control loop acceptance results](COMMAND-VERIFICATION.md)
+- [Earlier observer verification](VERIFICATION.md)
 - [Daily GitHub reporting](REPORTING.md)
 
 ## Documented checkpoint — 17 September 2026
@@ -21,8 +23,11 @@ release. Detailed live telemetry, coordinates, routes, world saves and logs stay
 The live local Three.js observer displays discovered space and all ten robot
 identities, receives incremental updates and recovers automatically after disconnects.
 The same bridge exposes structured state, bounded events and atomic local snapshots.
-The viewer is read-only. The new strategic command interface is designed but disabled;
-the existing Mission Control scheduler continues executing legitimate robot jobs.
+The viewer is read-only. A separate local CLI now submits bounded SURVEY_AREA
+objectives. Mission Control validates them, uses the existing scheduler, persists
+their lifecycle and verifies return/completion evidence. Production and quest-level
+planners remain future work. A real survey added 40 known cells and returned safely;
+rejection, duplicate retry and controller/bridge restart checks passed.
 
 Verified milestones include physical chest storage, robot crafting, a working
 furnace, two tin ingots and eight iron ingots delivered to storage. The Iron Supply

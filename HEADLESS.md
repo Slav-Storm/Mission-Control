@@ -2,11 +2,12 @@
 
 This extends the running observer. There is one bridge, one decoded model, and
 two consumers: the browser and an external reasoning agent. Minecraft computer 0
-remains authoritative. The interface performs no task scheduling, world discovery,
-recipe inference, Minecraft writes, or graphical input.
+remains authoritative. The bridge performs no task scheduling, world discovery or recipe inference.
+The CLI can now submit immutable objective requests; validation and scheduling remain
+inside Mission Control. No graphical input is required.
 
-This document describes the local implementation. The public repository currently
-contains documentation and reports, not the executable files referenced below.
+This describes the local implementation; this public repository contains documentation
+and reports, not the executable files referenced below.
 
 ## Available now
 
@@ -25,7 +26,8 @@ node viewer/agent.mjs capabilities
 ```
 
 Commands produce JSON and require no screenshots, mouse, keyboard or internet.
-The CLI communicates only with 127.0.0.1:4318. `snapshot` returns the complete
+Read commands communicate only with 127.0.0.1:4318. Objective submission uses
+the separate local file transport described in CONTROL.md. `snapshot` returns the complete
 model; `world` returns its known cells. `fleet` includes identities, roles, poses,
 headings, reported fuel, slot inventories, capabilities, current jobs, outcomes,
 timestamps and any reported activity. Job records preserve available reason and
@@ -45,6 +47,7 @@ HTTP GET/HEAD endpoints:
 | `/api/v1/state/infrastructure` | Reported storage inventories, observed blocks, documented control location |
 | `/api/v1/state/progression` | Recorded day, objectives and known quest context |
 | `/api/v1/state/production` | Reported outputs, recipe IDs and robot operation capabilities |
+| `/api/v1/state/commands?status=COMPLETED` | Durable command records; optional exact status or `active` filter |
 | `/api/v1/state/routes` | Centrally reported routes if present; otherwise explicitly unavailable |
 | `/api/v1/events` | Bounded recent events and pagination cursor |
 | `/api/v1/capabilities` | Version, supported reads, limits and disabled command gate |
@@ -117,78 +120,11 @@ archives and the pre-existing raw snapshot/delta journals remain local. A crash
 can truncate an archive's final line; ignore incomplete final lines. These are
 observer histories, not a lossless in-game event bus.
 
-## Command boundary: designed, deliberately not activated
+## Validated command interface
 
-`command-contract.mjs` defines versioned UUID command envelopes and the strategic
-hierarchy. The first planned operation is level 2 SURVEY_AREA. LOCATE_RESOURCE and
-PRODUCE_ITEM are level 3, COMPLETE_OBJECTIVE level 4. Their future planners belong
-inside Mission Control. Routine commands will not be sequences of turtle keystrokes.
-
-```powershell
-node viewer/agent.mjs draft 1
-node viewer/agent.mjs submit draft.json
-```
-
-The first prints a **DRAFT_ONLY** envelope. Saving it is not submission. The second
-currently returns a structured REJECTED result, `COMMAND_CHANNEL_DISABLED`, with
-`submittedToMissionControl:false` and `executed:false` (exit code 2). Invalid
-envelopes receive `INVALID_COMMAND`. Nothing is written to Minecraft. This is a
-fail-closed transport boundary, not a claim that Mission Control has rejected or
-executed an objective. There is no active command inbox, no POST route and no
-browser-accessible control endpoint. All WebSocket client messages remain rejected.
-
-## Next implementation checkpoint: validation must live inside Mission Control
-
-The existing developer `scripts/dispatch.py` is a legacy job-queue tool, not the
-future strategic command interface. Wrapping it with an HTTP POST would bypass
-the requirements below, so this checkpoint does not do that.
-
-Implement a small `software/lib/objectives.lua` first, tested offline, beginning
-with SURVEY_AREA. Then integrate it into control.lua at an idle, checkpointed
-boundary. Turtles keep physical safety checks; the bridge never claims acceptance.
-
-Required transaction and lifecycle:
-
-1. A separate trusted local agent transport durably queues an immutable envelope
-   with schema version, UUID, operation, parameters, creation/expiry time and
-   optional expected-state preconditions. Record SUBMITTED as a transport receipt.
-2. Mission Control deduplicates by UUID and a canonical request digest. Same UUID
-   and same payload returns the original receipt/result; different payload is an
-   explicit ID_REUSE_CONFLICT and must never overwrite or rerun the original.
-3. Mission Control validates bootstrap sealed, operation allowlist, fresh radio,
-   actual robot capabilities/status, no ambiguous navigation, required resources,
-   safe known navigation and return fuel, and existing task ownership. Reject with
-   structured reasons such as INSUFFICIENT_RETURN_FUEL, ROBOT_BUSY, STALE_TELEMETRY,
-   UNKNOWN_ROUTE, MISSING_INPUTS, UNSUPPORTED_OPERATION or EXPIRED_COMMAND.
-4. Atomically persist ACCEPTED plus job reservations, deterministic child job IDs
-   and the plan **before** dispatch. Recheck safety/ownership at dispatch. Expiry
-   before acceptance/start does not silently cancel a robot already underground.
-5. Report RUNNING only from actual executor acknowledgement. Each job carries its
-   parent command ID, and progress is reported, not guessed from enqueue time.
-6. Report COMPLETED only after the operation's completion predicate is verified.
-   A returned survey is different from finding the requested ore; a crafting call
-   is different from delivered inventory; a crafted quest item is different from
-   recorded quest completion. Persist the evidence and resulting inventories.
-7. Failed or rejected commands remain queryable. Failed partial production must
-   preserve the physical materials, completed subtasks, failure reason and recovery
-   position; retries must never replay already-completed physical actions blindly.
-8. After restart, reconcile durable records with robot outcomes. Ambiguous in-flight
-   actions require recovery, never optimistic completion or automatic replay.
-
-Transport should be a separate local IPC/CLI capability with an atomic per-command
-file spool and acknowledged results, or an equivalently protected agent endpoint.
-Do not expose it through the viewer origin, JavaScript bundle, public bind address,
-or shared WebSocket. A loopback-only POST by itself is not a sufficient browser
-separation. The command service must also preserve existing manual job ownership
-until the legacy dispatcher is retired.
-
-Required acceptance tests before enabling writes: duplicate retries and conflicting
-IDs, stale/fuel/resource rejections, two objectives contending for one robot,
-crashes before/after acceptance and dispatch, worker failure, durable terminal
-results, actual bounded survey with return, and no viewer command access. These
-changes are intentionally deferred; the live viewer and external reads work now.
-
-Later checkpoints add Mission Control recipe/inventory planning, physical delivery
-verification, renewable fuel management, and quest integration. Until then graphical
-control is only needed for mechanics the colony cannot yet expose; ordinary state
-inspection already requires no graphical control. The player remains immobile.
+The separate local CLI file transport is now enabled for SURVEY_AREA. Mission
+Control validates requests, reserves an existing robot job and records durable
+lifecycle and completion evidence. The browser and bridge remain read-only.
+See [CONTROL.md](CONTROL.md) for submission, querying, validation, idempotence,
+restart behaviour and current recovery limits. Other strategic operations remain
+planned. No HTTP POST or browser command channel has been introduced.

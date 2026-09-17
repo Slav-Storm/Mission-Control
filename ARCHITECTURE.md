@@ -13,8 +13,8 @@ checking that it is still the observer Node process. Stopping it cannot stop rob
 The same bridge now provides a versioned headless API, CLI, atomic file snapshot
 and bounded semantic event feed. See [HEADLESS.md](HEADLESS.md) for commands,
 cursor/reconnection rules and the future command validation boundary. The viewer
-remains read-only; command submission is deliberately disabled until Mission
-Control implements durable validation, acknowledgement and completion evidence.
+remains read-only. The separate local CLI now submits bounded survey objectives
+for Mission Control validation; see [CONTROL.md](CONTROL.md).
 
 ## Authority and architecture
 
@@ -31,7 +31,9 @@ The bridge opens only these two existing Mission Control files:
 It does not read region files, seed data, level.dat, private robot maps, commands,
 inboxes, or robot navigation files. It never writes to the Minecraft instance.
 This is a decoded presentation of the existing map, not an independent mapper.
-No Mission Control or worker software changes were needed for the viewer.
+No Mission Control or worker software changes were needed for the original viewer.
+The later command-loop checkpoint extended only Mission Control; the worker software
+remained unchanged. The separate CLI writes requests, never authoritative state.
 
 ### Existing telemetry schema
 

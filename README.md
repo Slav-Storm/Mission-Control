@@ -17,6 +17,7 @@ release. Detailed live telemetry, coordinates, routes, world saves and logs stay
 - [Quest intelligence and physical staging](QUESTS.md)
 - [Production planning and quest preparation](PRODUCTION.md)
 - [Production generalization acceptance results](PRODUCTION-VERIFICATION.md)
+- [Reusable crafting and quest orchestration checkpoint](CAPABILITY-VERIFICATION.md)
 - [Run isolation, retention and Minecraft-day replay](RUNS-HISTORY.md)
 - [Infrastructure-hardening verification](HARDENING-VERIFICATION.md)
 - [Headless control loop acceptance results](COMMAND-VERIFICATION.md)
@@ -43,10 +44,12 @@ capabilities, recursively expands ingredients and respects quest reservations.
 The generalized logs-to-planks-to-sticks executor physically produced four sticks
 through two verified child jobs. A separate regression mined fresh magnetite and
 produced one additional iron ingot without consuming the reserved 24.
-PLAN_QUEST and PREPARE_QUEST were exercised for Movin' Around and returned truthful
-unsupported-recipe blockers. Automatic quest execution orchestration remains
-limited; see [PRODUCTION.md](PRODUCTION.md) and
-[PRODUCTION-VERIFICATION.md](PRODUCTION-VERIFICATION.md) for scope and evidence.
+The next blocker-driven stage added source-backed shaped recipes, selective
+inventory access, physical ingredient delivery and bounded quest orchestration.
+Movin' Around now also reached READY FOR SUBMISSION: one wooden hook is physically
+staged and reserved. Iron Supply still has its separate 24 reserved ingots. Neither
+quest has been submitted or claimed. See [CAPABILITY-VERIFICATION.md](CAPABILITY-VERIFICATION.md)
+for the successful chain, recovery incidents and remaining limits.
 
 These are checkpoint facts, not a live inventory feed. Detailed telemetry remains
 local; readiness requires fresh physical verification and expires to STAGED after

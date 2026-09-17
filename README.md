@@ -17,6 +17,8 @@ release. Detailed live telemetry, coordinates, routes, world saves and logs stay
 - [Quest intelligence and physical staging](QUESTS.md)
 - [Production planning and quest preparation](PRODUCTION.md)
 - [Production generalization acceptance results](PRODUCTION-VERIFICATION.md)
+- [Run isolation, retention and Minecraft-day replay](RUNS-HISTORY.md)
+- [Infrastructure-hardening verification](HARDENING-VERIFICATION.md)
 - [Headless control loop acceptance results](COMMAND-VERIFICATION.md)
 - [Earlier observer verification](VERIFICATION.md)
 - [Daily GitHub reporting](REPORTING.md)
@@ -51,6 +53,12 @@ local; readiness requires fresh physical verification and expires to STAGED afte
 five minutes without another inspection.
 
 ## Progress reports
+
+The development colony now has a persistent run identity. Portable quest and
+recipe knowledge is separated from physical state, and a tested offline initializer
+inherits no terrain or inventory. Local compressed history supports the existing
+viewer's day replay from day 10 onward. Live operations continue independently
+of historical viewing. No clean world has been started.
 
 Files named `day-NNNNN.md` describe completed Minecraft days. Recording started
 partway through day 4; earlier daily history is not invented. An in-game recorder

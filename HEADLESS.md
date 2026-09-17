@@ -97,7 +97,7 @@ emits BRIDGE_RESYNC rather than pretending the existing colony was just discover
 Everything below stays in this workspace, excluded from GitHub:
 
 ```text
-viewer/runtime/interface/
+runs/RUN_ID/interface/
   state/snapshot.json             complete derived model; refreshed up to every 5s
   events/recent.json              atomic bounded event checkpoint + sequence
   events/recent.jsonl             atomic JSONL convenience view, refreshed up to every 5s
@@ -133,3 +133,8 @@ PREPARE_QUEST blocker interface now use this same transport. Read-only views inc
 Plans are projected from the existing authoritative command records, with no second
 mutable plan database. See [PRODUCTION.md](PRODUCTION.md). No HTTP POST or browser
 command channel has been introduced.
+
+The active run is validated before loading this projection. The same API now
+provides run-scoped day reconstruction and full archived terminal records; the
+CLI adds `runs`, `history` and `archived-record`. These historical reads never
+replace current state or enter the planner. See [RUNS-HISTORY.md](RUNS-HISTORY.md).

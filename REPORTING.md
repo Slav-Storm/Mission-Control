@@ -20,3 +20,9 @@ colony operate locally without depending on GitHub or an external telemetry serv
 
 Project documentation is published separately from daily reports. Updating these
 documents does not modify the Minecraft world, dispatch jobs or acknowledge a day.
+
+Daily reports and the publication ledger are now associated with the development
+run identity. A local archive can preserve closed reports before internet access
+or publication is available. The publisher reads only reports for the active run;
+an identity mismatch stops publication. The live timeline and archive never use
+GitHub as transport. See [RUNS-HISTORY.md](RUNS-HISTORY.md).

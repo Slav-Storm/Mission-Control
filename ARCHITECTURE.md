@@ -85,10 +85,11 @@ for blocks and point buffers for inspected clear space. New cells briefly glow.
 Height clipping and layer toggles affect only rendering. All ten robot markers
 have identity and heading; select from the fleet or map, focus or follow.
 
-`viewer/runtime/history/` holds **local-only** append-only session journals:
-initial snapshot followed by deltas, original robot timestamps and observer
-receipt times. These distinguish observation receipt from the unknown original
-cell discovery time. They support future replay; replay UI is not implemented.
+`viewer/runtime/history/` retains legacy journals. Current recording uses
+run-scoped compressed checkpoints and incremental deltas. The existing viewer
+now supports day selection, playback and LIVE return from day 10 onward. Source,
+controller and observer times remain distinct from unknown discovery times.
+See [RUNS-HISTORY.md](RUNS-HISTORY.md) for identity and retention boundaries.
 In-memory position trails retain the latest 2,000 samples per robot; full recorded
 session history remains on disk. History write failure is isolated from reading
 and rendering. Monitor disk use for long unattended sessions.

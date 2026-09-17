@@ -24,7 +24,7 @@ node viewer/agent.mjs commands --status REJECTED
 node viewer/agent.mjs commands --status FAILED
 ```
 
-`draft` creates a UUID and five-minute expiry. It does not submit. Its optional
+`draft` creates a UUID, the active runId and a five-minute expiry. It does not submit. Its optional
 second argument is a JSON parameters object. Survey bounds are relative to the
 chosen robot's actual accepted pose: `radius` 1–16, `limit` 2–64 visited cells and
 `vertical` exactly 0. Default parameters are radius 4 and limit 16. Mission Control
@@ -33,6 +33,11 @@ selects the existing `area_survey` implementation and owns its job creation.
 Preserve the original envelope when retrying. An identical ID and payload returns
 the original transport receipt without another job. A changed payload under the
 same ID receives `ID_REUSE_CONFLICT`. To express a new objective, create a new ID.
+
+Missing or mismatched run identities are rejected rather than retagged. Older
+terminal detail may be archived after verified retention; compact reconciliation
+receipts remain in Mission Control. Use `archived-record commands COMMAND_ID` for
+full historical detail. See [RUNS-HISTORY.md](RUNS-HISTORY.md).
 
 A `SUBMITTED` CLI response means durable delivery to the input spool only. The
 command becomes authoritative when Mission Control records it. Querying before
@@ -104,8 +109,9 @@ Worker recovery states remain failures requiring diagnosis, never optimistic suc
 
 This version has no cancellation or automated ambiguous-job recovery command.
 Expiry applies before dispatch; it does not terminate a robot already exploring.
-Spool files and command history are retained; monitor the computer disk as usage
-grows. Archival/retention policy is a later checkpoint, not silent deletion now.
+Command identities and reconciliation receipts remain local; full older terminal
+detail may be pruned only after verified host archival under the current run.
+See [RUNS-HISTORY.md](RUNS-HISTORY.md) for the implemented retention policy.
 
 Read records via `/api/v1/state/commands` or the normal full snapshot. The existing
 semantic event feed projects persistent history as `COMMAND_SUBMITTED`,

@@ -18,6 +18,8 @@ release. Detailed live telemetry, coordinates, routes, world saves and logs stay
 - [Production planning and quest preparation](PRODUCTION.md)
 - [Production generalization acceptance results](PRODUCTION-VERIFICATION.md)
 - [Reusable crafting and quest orchestration checkpoint](CAPABILITY-VERIFICATION.md)
+- [Concurrent operations and fuel policy](OPERATIONS.md)
+- [Operations and renewable fuel verification](OPERATIONS-VERIFICATION.md)
 - [Run isolation, retention and Minecraft-day replay](RUNS-HISTORY.md)
 - [Infrastructure-hardening verification](HARDENING-VERIFICATION.md)
 - [Headless control loop acceptance results](COMMAND-VERIFICATION.md)
@@ -54,6 +56,14 @@ for the successful chain, recovery incidents and remaining limits.
 These are checkpoint facts, not a live inventory feed. Detailed telemetry remains
 local; readiness requires fresh physical verification and expires to STAGED after
 five minutes without another inspection.
+
+The development operations manager has now generated useful concurrent survey,
+forestry and logistics jobs through the existing scheduler. Three robots were
+physically active together. Grove repair verified four replanted beds, and three
+automatic refuel jobs consumed twelve earned logs for 180 measured fuel. Both
+quest reservations remain intact and unsubmitted. The first supervised operating
+window is stopped; the observer and archive remain live. Fuel independence is not
+yet established. See [OPERATIONS-VERIFICATION.md](OPERATIONS-VERIFICATION.md).
 
 ## Progress reports
 

@@ -23,6 +23,8 @@ node viewer/agent.mjs progression
 node viewer/agent.mjs production
 node viewer/agent.mjs events --limit 20
 node viewer/agent.mjs capabilities
+node viewer/agent.mjs operations
+node viewer/agent.mjs fuel
 ```
 
 Commands produce JSON and require no screenshots, mouse, keyboard or internet.
@@ -41,6 +43,8 @@ HTTP GET/HEAD endpoints:
 | `/api/v1/snapshot` | Same model as existing `/snapshot`; schema version and event cursor added |
 | `/api/v1/status` | Snapshot metadata without world cells/trails, for lightweight routine reads |
 | `/api/v1/state/fleet` | Existing robot records |
+| `/api/v1/state/operations` | Manager policy, work allowance, utilisation, classes and idle reasons |
+| `/api/v1/state/fuel` | Measured fleet fuel ledger, physical materials, commitments and reserves |
 | `/api/v1/state/jobs?status=failed` | Job records; optional exact status filter |
 | `/api/v1/state/world` | Existing decoded cells, including observed clear space |
 | `/api/v1/state/resources` | Ore/hazard indexes referencing those same cell keys |

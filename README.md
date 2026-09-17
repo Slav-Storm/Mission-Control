@@ -13,5 +13,6 @@ for completed reports every five minutes and uploads each day once. The computer
 Codex and authenticated GitHub browser session must remain available. Minecraft
 must run for in-game days to advance.
 
-Current stage: exploration and primitive resource collection. Crafting, storage
-and industrial production remain unfinished.
+Established milestones: physical chest storage, robot crafting, a working
+furnace and the first two tin ingots. Iron prospecting and renewable supplies
+are in progress. See the dated reports for recorded updates.

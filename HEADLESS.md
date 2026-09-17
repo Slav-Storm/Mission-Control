@@ -127,4 +127,9 @@ Control validates requests, reserves an existing robot job and records durable
 lifecycle and completion evidence. The browser and bridge remain read-only.
 See [CONTROL.md](CONTROL.md) for submission, querying, validation, idempotence,
 restart behaviour and current recovery limits. See [QUESTS.md](QUESTS.md) for installed quest queries, inventory planning and
-physical reservation semantics. More general strategic operations remain planned. No HTTP POST or browser command channel has been introduced.
+physical reservation semantics. Bounded PLAN_PRODUCTION, PLAN_QUEST and the initial
+PREPARE_QUEST blocker interface now use this same transport. Read-only views include
+`/api/v1/state/plans`, `/api/v1/state/colonyCapabilities` and `/api/v1/recipes`.
+Plans are projected from the existing authoritative command records, with no second
+mutable plan database. See [PRODUCTION.md](PRODUCTION.md). No HTTP POST or browser
+command channel has been introduced.

@@ -15,6 +15,8 @@ release. Detailed live telemetry, coordinates, routes, world saves and logs stay
 - [Headless state API and event protocol](HEADLESS.md)
 - [Validated command submission and recovery semantics](CONTROL.md)
 - [Quest intelligence and physical staging](QUESTS.md)
+- [Production planning and quest preparation](PRODUCTION.md)
+- [Production generalization acceptance results](PRODUCTION-VERIFICATION.md)
 - [Headless control loop acceptance results](COMMAND-VERIFICATION.md)
 - [Earlier observer verification](VERIFICATION.md)
 - [Daily GitHub reporting](REPORTING.md)
@@ -32,9 +34,17 @@ the headless interface. No undiscovered terrain is read from world files.
 Iron Supply is physically prepared: 24 iron ingots were verified in the existing
 earned chest and reserved. The test acquired 32 logs, produced the missing 16 iron
 ingots, delivered them and stopped at READY FOR SUBMISSION. No quest submission,
-manual checkmark or reward claim occurred. Full quest planners and arbitrary
-production remain future work. See [QUESTS.md](QUESTS.md) and
-[QUEST-VERIFICATION.md](QUEST-VERIFICATION.md) for scope and evidence.
+manual checkmark or reward claim occurred.
+
+A bounded production planner now separates recipe knowledge from verified colony
+capabilities, recursively expands ingredients and respects quest reservations.
+The generalized logs-to-planks-to-sticks executor physically produced four sticks
+through two verified child jobs. A separate regression mined fresh magnetite and
+produced one additional iron ingot without consuming the reserved 24.
+PLAN_QUEST and PREPARE_QUEST were exercised for Movin' Around and returned truthful
+unsupported-recipe blockers. Automatic quest execution orchestration remains
+limited; see [PRODUCTION.md](PRODUCTION.md) and
+[PRODUCTION-VERIFICATION.md](PRODUCTION-VERIFICATION.md) for scope and evidence.
 
 These are checkpoint facts, not a live inventory feed. Detailed telemetry remains
 local; readiness requires fresh physical verification and expires to STAGED after

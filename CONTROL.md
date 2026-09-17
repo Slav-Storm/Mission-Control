@@ -129,3 +129,13 @@ observed adjacent `port` (x/y/z). Timber acquisition takes the spruce-log `item`
 operation takes `item`, `count` and known furnace `storageId`. Mission Control
 validates live prerequisites and rejects unsupported variants. Parameters describe
 objectives; they cannot contain arbitrary action sequences.
+
+
+## Production planning checkpoint
+
+PLAN_PRODUCTION (level 3), PLAN_QUEST (level 4) and the initial PREPARE_QUEST
+(level 4) interface share the durable command lifecycle. Planning creates no robot
+jobs. Unsupported preparation exposes structured blockers; it cannot claim quests.
+PRODUCE_ITEM additionally supports a verified two-child crafting chain. The parent
+remains RUNNING between children and verifies final inventory before completion.
+See [PRODUCTION.md](PRODUCTION.md) for current bounds and executor limitations.

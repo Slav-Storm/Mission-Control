@@ -1,28 +1,33 @@
-# PC Mission Control — migration checkpoint
+# PC Mission Control - migration checkpoint
 
-24 September 2026. **The PC does not yet control the colony.** Physical dispatch remains disabled; no quest has been submitted or claimed.
+25 September 2026. **Migration remains incomplete and is paused at the operator's request.** No quest has been submitted or claimed, and no clean world has been started.
 
-Implemented locally:
+## Development colony
 
-- Per-run SQLite shadow ledger, transactional reservations, event deduplication, inventory revisions, request dependencies and restart checks.
-- Seven deterministic ministry handlers and persistent policies. Their supported planning/allocation contracts pass isolated tests; physical execution integration remains incomplete.
-- Existing map/history imported with stale inventory explicitly marked. Existing Three.js live/replay observer retained, with a read-only ministry panel.
-- Disposable static export of 70,359 effective recipes, including explicit unsupported coverage. This is not yet a verified development-equivalent executable catalog.
-- Bounded Codex inbox, manual handoff and usage-policy tests. No actual model invocation or ten-minute scheduled task yet.
-- Lua/Node authenticated file transport: durable journal, exact-byte HMAC, SQLite commit, signed contiguous ACK and source pruning only after acknowledgment. Duplicate delivery, lost ACK and restarts pass isolated tests. A sequencing failure was preserved and corrected with ordered bounded batches.
+The drained, reconciled authority handover to epoch 1 has passed. The PC service remains in `CUTOVER_HOLD`, with dispatch disabled. The development Minecraft instance is closed. The ten original robots, their run identity, existing evidence and the protected iron ingots and wooden hook remain preserved. This checkpoint's new physical tests ran only in the disposable environment.
 
-## Fresh development audit
+Earlier development evidence includes the approved hammer bridge, bounded recovery, protected-inventory reinspection, quest-readiness verification and a bounded exploration job. The existing viewer remains reachable. Newly implemented source has not been silently deployed to the development fleet.
 
-The original world was opened and the stationary player anchor verified. All ten turtles produced fresh local heartbeats. Read-only adjacent inventory probes independently confirmed **24 iron ingots and the wooden hook remain physically staged**. The probes left robot positions, fuel and cargo unchanged. Neither quest was submitted or claimed.
+## Newly verified physical behavior
 
-The old controller was powered off. A verified adjacent power-on exposed its existing persistence problem: **Out of space while writing the global colony snapshot**. The committed state is intact; unfinished-save evidence and the fresh failure are preserved. No world reset, restoration, quota increase or resource spawning was used.
+- Legitimate turtle refuelling, verified ore extraction and oriented furnace placement passed isolated physical tests through the existing command and archive boundaries.
+- A real Production ministry chain processed one raw magnetite with one log into one verified iron ingot. Processing capability was registered only after archived output evidence, and remains limited to the witnessed batch.
+- A 30-second host acknowledgement blackout exposed a reporting defect. The corrected runtime durably records the interruption, keeps resource custody and claims held, and blocks replay. A paired normal-production run also passed. Failed earlier runs remain preserved.
+- A separate installed item quest reached `READY_FOR_SUBMISSION` in the disposable world through production, protected reservation handoff and two independent turtle inventory inspections. It was neither submitted nor claimed; dependency completion remains unknown.
+- Generic multi-source logistics physically collected one and two logs from separate inventories and delivered all three to a destination. The courier ended empty; all receipts were archived and commands retired. Distinct transfer legs now have distinct durable custody keys without losing retry deduplication.
 
-The observer and PC shadow service remain available, but the legacy controller's source/day records are stale. Routine production and daily reporting cannot advance normally until this persistence/gateway migration is resolved. Other known storage still requires fresh inspection.
+The furnace input/output logistics fixture timed out at a command-publication gate before its input transfer was accepted. Two inspection jobs passed, but no input moved and no output was produced. The failed run, prepared command and held claims are preserved for reconciliation. The disposable server stopped normally; this remains an open blocker, not a successful production test.
 
-## Verification and remaining work
+## Software and regression checks
 
-Twenty-one Python/Lua regression suites and twenty-two viewer tests passed. Fifteen PC tests passed. Three fresh-process Lua/Node/SQLite transport runs passed after fixing the sequencing bug. A million-cell SQLite benchmark is recorded separately; none of these claims substitutes for physical migration acceptance.
+The source now includes machine-sided inventory access, bounded input delivery requests for an empty verified furnace, protected production-to-quest custody handoff and read-only viewer capability/infrastructure milestones. Unknown machine interfaces remain blocked. Portable code, physical capability availability and run-specific state remain distinct.
 
-Next: bounded observation-only gateway, source enrollment and reconciliation, development catalog equivalence, approved prospecting deployment, drained epoch-fenced authority transfer, physical ministry demonstrations and the scheduled Codex checker.
+The latest regression run passed **198 Node tests**, all PC Lua/Python suites and all **22 existing regression suites**, including the viewer. These results are not substitutes for development-world physical acceptance.
 
-Source, databases, tokens, exact coordinates, world backups and detailed telemetry remain local. Precise recovery receipts and requirement checkpoints prevent repeated physical actions. No clean world has been started. This is an implementation checkpoint, not a completion claim.
+## Remaining gates
+
+The specification still requires the complete seven-ministry construction/production request chain, guarded development deployment and fresh reconciliation, supervised standing-operation cycles with useful concurrency and fuel restraint, remaining disconnect/recovery acceptance, thin in-game state retirement and final operational handover. Individual successful fixtures do not complete the migration.
+
+The ten-minute Codex checker remains installed but disabled behind its standing-operations gate. An earlier single, explicitly authorised isolated Codex invocation is recorded separately; recurring model calls are not enabled. Daily-reporting functionality and its evidence remain preserved while progression is paused.
+
+The precise local checkpoint identifies completed actions, retained failures, immutable runtime proofs and the next safe steps. Source, binaries, databases, tokens, coordinates, backups and raw telemetry remain local. Only concise documentation is published.

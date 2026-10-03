@@ -92,3 +92,11 @@ The local interface now provides bounded technology-target planning using
 installed recipes, pack overrides, quest prerequisites and current colony
 capabilities. See [TECHNOLOGY-PLANNING.md](TECHNOLOGY-PLANNING.md) for the current
 headless development checkpoint, verified recovery infrastructure and limits.
+
+
+## Latest authentication checkpoint — 3 October 2026
+
+See the [full Codex inbox authentication report](CODEX-INBOX-AUTHENTICATION.md)
+for the supported ChatGPT session path, safeguards, test results and current
+manual-invocation limitation. Recurring invocation remains disabled. The wider
+PC migration is still incomplete; earlier dated colony checkpoints are historical.

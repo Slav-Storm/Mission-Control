@@ -1,33 +1,62 @@
 # PC Mission Control - migration checkpoint
 
-25 September 2026. **Migration remains incomplete and is paused at the operator's request.** No quest has been submitted or claimed, and no clean world has been started.
+3 October 2026. **Migration resumed, but remains incomplete and blocked by the test environment.** The earlier operator pause is no longer active. No quest has been submitted or claimed, and no clean world has been started.
 
 ## Development colony
 
-The drained, reconciled authority handover to epoch 1 has passed. The PC service remains in `CUTOVER_HOLD`, with dispatch disabled. The development Minecraft instance is closed. The ten original robots, their run identity, existing evidence and the protected iron ingots and wooden hook remain preserved. This checkpoint's new physical tests ran only in the disposable environment.
+The drained, reconciled authority handover to epoch 1 previously passed. The latest read-only PC ledger check still shows `CUTOVER_HOLD`, dispatch disabled, no active claims and both protected quest reservations retained: 24 iron ingots and one wooden hook. This is ledger evidence, not a fresh physical inventory inspection.
 
-Earlier development evidence includes the approved hammer bridge, bounded recovery, protected-inventory reinspection, quest-readiness verification and a bounded exploration job. The existing viewer remains reachable. Newly implemented source has not been silently deployed to the development fleet.
+The development world and robot software were not modified during this resumption. Minecraft was not running, no world was opened, and no physical command was submitted. The ten original robots, run identity, map knowledge, infrastructure and historical evidence remain preserved. Newly implemented source has not been deployed or granted runtime approval.
 
-## Newly verified physical behavior
+Earlier development evidence includes the approved hammer bridge, bounded recovery, protected-inventory reinspection and a bounded exploration job. Live viewer availability was not reverified this session; the viewer regression suite passed.
 
-- Legitimate turtle refuelling, verified ore extraction and oriented furnace placement passed isolated physical tests through the existing command and archive boundaries.
-- A real Production ministry chain processed one raw magnetite with one log into one verified iron ingot. Processing capability was registered only after archived output evidence, and remains limited to the witnessed batch.
-- A 30-second host acknowledgement blackout exposed a reporting defect. The corrected runtime durably records the interruption, keeps resource custody and claims held, and blocks replay. A paired normal-production run also passed. Failed earlier runs remain preserved.
-- A separate installed item quest reached `READY_FOR_SUBMISSION` in the disposable world through production, protected reservation handoff and two independent turtle inventory inspections. It was neither submitted nor claimed; dependency completion remains unknown.
-- Generic multi-source logistics physically collected one and two logs from separate inventories and delivered all three to a destination. The courier ended empty; all receipts were archived and commands retired. Distinct transfer legs now have distinct durable custody keys without losing retry deduplication.
+## Preserved physical evidence
 
-The furnace input/output logistics fixture timed out at a command-publication gate before its input transfer was accepted. Two inspection jobs passed, but no input moved and no output was produced. The failed run, prepared command and held claims are preserved for reconciliation. The disposable server stopped normally; this remains an open blocker, not a successful production test.
+The following are earlier disposable-world results, not new development-colony acceptance:
 
-## Software and regression checks
+- Legitimate turtle refuelling, verified ore extraction and oriented furnace placement passed isolated physical tests.
+- A Production ministry chain processed one raw magnetite with one log into one physically verified iron ingot.
+- A 30-second host acknowledgement blackout verified durable interruption reporting, retained custody and safe hold. A separate normal-production proof passed with matching runtime bytes.
+- An additional installed item quest reached READY_FOR_SUBMISSION through production, protected reservation handoff and two independent inventory witnesses. It was not submitted or claimed; dependency completion remained unknown.
+- Multi-source logistics collected one and two logs from separate inventories and delivered all three. Receipts were archived, jobs retired and the courier ended empty.
 
-The source now includes machine-sided inventory access, bounded input delivery requests for an empty verified furnace, protected production-to-quest custody handoff and read-only viewer capability/infrastructure milestones. Unknown machine interfaces remain blocked. Portable code, physical capability availability and run-specific state remain distinct.
+Correction to the September report: the failed integrated furnace-logistics transfer **was published**, then rejected with TRANSFER_STORAGE_BLOCK_REQUIRED. Later stale-observation errors were secondary. No input transfer or production succeeded in that failed attempt. Its original failure, prepared command, held claims and other evidence remain preserved; it must not be replayed.
 
-The latest regression run passed **198 Node tests**, all PC Lua/Python suites and all **22 existing regression suites**, including the viewer. These results are not substitutes for development-world physical acceptance.
+## Current blockers and changes
 
-## Remaining gates
+The existing Lupa 2.8 test package is present but inaccessible to this session. Neither available Python interpreter provides a usable LuaRuntime import. Downloading a replacement is denied by the session's network policy.
 
-The specification still requires the complete seven-ministry construction/production request chain, guarded development deployment and fresh reconciliation, supervised standing-operation cycles with useful concurrency and fuel restraint, remaining disconnect/recovery acceptance, thin in-game state retirement and final operational handover. Individual successful fixtures do not complete the migration.
+The installed Minecraft Java runtime independently fails a read-only directory probe with AccessDeniedException before the disposable world can load. No permission escalation or filesystem protection changes were attempted.
 
-The ten-minute Codex checker remains installed but disabled behind its standing-operations gate. An earlier single, explicitly authorised isolated Codex invocation is recorded separately; recurring model calls are not enabled. Daily-reporting functionality and its evidence remain preserved while progression is paused.
+Added a pinned test dependency and fail-fast Lua/Java preflights before the next fixture can allocate robot identities, write test state, launch Minecraft or submit commands. Regression runners now retain environment diagnostics without silently skipping failed imports. The next physical fixture generation has not been created.
 
-The precise local checkpoint identifies completed actions, retained failures, immutable runtime proofs and the next safe steps. Source, binaries, databases, tokens, coordinates, backups and raw telemetry remain local. Only concise documentation is published.
+Existing source also contains guarded furnace-sided logistics, production-to-quest custody handoff, viewer capability projections and bounded standing stock cycles. Source implementation alone does not prove physical acceptance.
+
+## Latest verification
+
+| Check | Result |
+|---|---|
+| PC Node tests | 225 passed |
+| Viewer tests | 25 passed |
+| Telemetry recovery | Passed |
+| Final environment-preflight unit tests | 7 passed |
+| PC Lua suites | 23 blocked before execution |
+| Legacy Lua suites | 21 blocked before execution |
+| New physical acceptance or deployment | Not performed |
+
+Earlier passing Lua and physical proofs remain historical evidence. They do not replace testing the current source. The migration is not complete.
+
+## Remaining order
+
+1. Restore normal test-environment accessibility and pass both preflights and the full regression suites.
+2. Run a fresh isolated furnace-sided access proof, then a fresh integrated furnace-logistics attempt. Preserve every prior attempt.
+3. Complete the single-root seven-ministry physical construction/production chain, followed by an approved exact-runtime development deployment and fresh reconciliation.
+4. Archive and retire global in-game state, preserving recovery journals and proving safe disconnect behaviour.
+5. Run a finite supervised standing-operation window demonstrating useful concurrency, another work cycle, fuel restraint and protected resources.
+6. Complete remaining recovery, performance, regression and final handover criteria before enabling any tested continuous mode.
+
+## Codex inbox and publication boundary
+
+The authentication investigation is closed at the operator's instruction. **Recurring Codex invocation remains disabled; manual inbox fallback is retained.** No further authentication investigation or model invocation occurred during migration resumption. Automatic invocation remains an explicitly unavailable feature; no separately billed API fallback is allowed. See [the authentication report](CODEX-INBOX-AUTHENTICATION.md).
+
+Precise source manifests, tests, checkpoints and failure evidence remain local. Daily-reporting functionality is preserved. Source, binaries, credentials, databases, exact coordinates, backups and raw telemetry are not published. This repository receives concise documentation through the signed-in browser.

@@ -1,70 +1,52 @@
 # PC Mission Control - migration checkpoint
 
-4 October 2026. **Migration remains incomplete.** The earlier Java/Lua environment restrictions are resolved. Substantial physical acceptance has passed, but the final development construction/production chain and operational handover have not.
+4 October 2026, evening update. **MIGRATION: IN PROGRESS.** Physical integration has advanced substantially; final recovery and operational acceptance remain open. This is a progress report, not completion sign-off.
 
 ## Development colony
 
-The existing run and ten original robots are preserved. The epoch-1 PC authority remains in **CUTOVER_HOLD**, with dispatch disabled and zero active claims. No quest has been submitted or claimed, and no clean world has been started.
+The existing development run and ten original robots remain preserved. PC authority is epoch 1, normally in **CUTOVER_HOLD**, with physical dispatch disabled. The latest held restart audit verified all ten robots and the gateway, unchanged robot pose/fuel/cargo, and zero active claims. Protected storage has two physical witnesses confirming **24 iron ingots, one wooden hook and one staged flint**. No quest has been submitted or claimed. No clean world has been started.
 
-New development-world evidence includes:
+Minecraft was saved and closed normally to make room for disposable physical acceptance testing. PC Mission Control and the local observer remain running. There is no outstanding request for the operator to open the world; the earlier input/runtime environment problem was resolved.
 
-- Three real inventory audits overlapped for about nine seconds. Two independent witnesses confirmed the protected 24 iron ingots and wooden hook.
-- A strategic stock delivery completed before background timber work. Two standing timber-buffer cycles completed through seven verified jobs, with reserve robots left available and no model calls.
-- An additional early quest's flint requirement was physically inspected and protected. It reached preparation readiness without submission or claiming.
-- Global legacy state was archived locally and retired from ComputerCraft once. A same-world restart confirmed that the retired global databases did not reappear and physical robot state was unchanged. Recovery journals and identities remain on the computers.
+## Newly completed physical evidence
 
-These are completed finite supervised windows. They do not approve unrestricted unattended dispatch or prove a sustainable positive fuel economy.
+- **Development furnace/construction:** the original strategic root reached SATISFIED through four verified jobs. Earlier failures remain preserved; failed actions were not blindly replayed.
+- **Development prospecting:** Director, Exploration, Logistics and Fleet coordinated physical hammer collection and a bounded native scan/return. Lua receives only the legitimate GTCEu category result, never hidden ore coordinates or counts.
+- **Runtime 9:** fresh development startup and reconciliation now pass. Selective collection is deployed with journals, reservation protection and uncertainty handling.
+- **Seven-ministry isolated chain:** a stricter single-root test completed thirteen real Minecraft jobs. Receipt order proves native hammer prospecting preceded actual ore inspection, then extraction, processing, movement and construction. Disposable observations were not imported into the development run.
+- **Standing work:** preserved tests demonstrate strategic priority, three useful concurrent robots and repeated stock-buffer cycles. Development standing work completed seven verified jobs. These are finite supervised windows, not approval for unrestricted unattended operation.
+- **Forestry primitive:** four real disposable jobs verified inspection, sapling recovery, log harvesting and replanting. This candidate runtime is not deployed to the development colony. Regrowth, repeated renewable cycles and positive net fuel economics are not yet proven.
 
-## New isolated physical proofs
+## Software, data and regression
 
-The following tests used disposable Minecraft environments; their terrain and inventories were not imported into the colony:
-
-- Furnace-sided input/output access and the full input, fuel, processing, output-collection and storage chain passed with seven real jobs. The earlier TRANSFER_STORAGE_BLOCK_REQUIRED failure remains preserved and was not replayed.
-- One strategic root routed through all seven ministries and completed twelve real jobs, including resource observation, verified extraction, processing and storage construction. An initial byproduct assertion failure was preserved; read-only reconciliation then verified the actual stone-dust byproduct balance without repeating physical work.
-- Standing policies completed eleven real jobs, including three useful robots working concurrently, strategic priority and two cycles per buffer.
-- Selective inventory collection retrieved partial and full quantities from behind the first chest stack. The original first stack was restored, source/cargo deltas were verified, and protected test stock remained unchanged. Four simulated interruption points separately verify that uncertainty is retained rather than replayed.
-- Exact single-batch native crafting witnesses passed for ten bounded recipes. Knowing an exported recipe still does not make it executable.
-
-Failed earlier attempts and their diagnoses remain local historical evidence.
-
-## Runtime and software
-
-Runtime 9 adds narrowly approved same-chest selective collection. Each park/select/collect/restore step is journalled. Protected containers cannot use rearranging selection. Idle inventory refresh accepts only complete authenticated observations of an already registered matching native container; it excludes active claims and preserves ambiguous ownership. Draft work now prevents conflicting plans for the same robot while allowing independent robots to work concurrently.
-
-After a verified stopped-world backup, runtime 9 was installed once on the gateway and ten robots. Identity, recovery and state files were preserved. **Its fresh development startup and reconciliation have not yet passed.** Installation is not acceptance.
-
-The approved hard-hammer bridge was already deployed and physically verified in the intended instance. Its native result boundary remains unchanged: no hidden ore coordinates, counts, vein centres or arbitrary world queries.
-
-## Current verification
-
-| Check | Result |
+| Check | Current evidence |
 |---|---|
-| PC regression | 27 suites passed, including 277 Node cases and all required Lua suites |
-| Existing regression | 22 suites passed, including 25 viewer cases |
-| Held PC service restart | Seven policies, requests, jobs, ownership, inventory and map preserved; zero claims |
-| Local API samples | Maximum 32.76 ms across the measured held-service reads; not a live game-tick benchmark |
-| Viewer | Historical Day 10 reconstruction and return to LIVE verified; offline robots correctly marked stale |
-| Offline clean package | 911 quests and bounded recipe knowledge retained; zero inherited physical state, approvals or capability availability; no world activated |
-| Actual scheduled checker | Three empty checks, including a ten-minute interval, with zero model invocations |
+| PC regression baseline | 28 suites passed; 373 Node cases and all required Lua suites |
+| Existing regression baseline | 22 suites passed; latest separate viewer run has 28 passing cases |
+| Local test environment | Lua/Lupa and Java directory-access preflights repaired without broad security changes |
+| Effective installed recipes | 70,358 indexed: 51,593 parsed and 18,765 explicitly unsupported; ten native crafting witnesses retained |
+| Portable knowledge | 911-quest catalog retained; clean-package isolation tests inherit no physical world state |
+| Stock planning | Bounded outstanding demand and observed consumption now inform targets; caps, reservations and incoming supply remain accounted for |
+| Fuel accounting | Separates stored materials, witnessed conversion and robot fuel; sustainability remains INSUFFICIENT_EVIDENCE |
+| History/reporting | Closed-day local aggregate reports generated for days 92-108; observer-restart day closure tested without inventing observations |
+| Scale/performance | Actual API/receipt measurements plus archive and renderer tests up to one million synthetic cells; this is not a claim of measured Minecraft TPS |
 
-The requirement tracker, acceptance matrix, local runbook and continuation checkpoint now distinguish completed evidence from pending work. The old Java/Lua failures remain historical rather than current blockers.
+The viewer and timeline remain read-only. Source fingerprints, detailed receipts, preserved failures and test outputs remain local. Historical records are not rewritten to make new capabilities appear earlier.
 
-## Remaining acceptance and access gate
+## Test currently running
 
-Minecraft launched successfully, but remains at its title menu. The native input helper failed twice, including after refreshing and activating the window. Further game input was stopped; no player movement or new physical action occurred. Permission is already granted. The required access action is to open the existing development world and leave the player stationary.
+A disposable competing-demand reservation test has physically verified one eight-ingot transfer while the competing request reports SUPPLY_DEFICIT. The test protects twenty-four other ingots and checks that stock cannot be double-booked. Final drain, custody and evidence validation are still pending at this report's cutoff, so this is not yet recorded as a passed acceptance gate. The earlier bounded-window attempt is retained as a failed test rather than erased.
 
-After that, continuation is:
+## Remaining work
 
-1. Verify all ten runtime-9 robots, gateway identity, unchanged physical state and protected storage from fresh telemetry.
-2. Capture and bind the new effective static recipe generation before recipe execution.
-3. Resume the existing furnace construction root through a new finite supervised window. Do not recreate the root, rerun deployment or replay prior physical attempts.
-4. Complete applicable development integration, recovery, fuel/storage policy, live performance and final operational acceptance.
-5. Sign off only when the remaining mandatory criteria genuinely pass.
+1. Finish the competing-reservation test's final evidence and drain checks.
+2. Complete stale-host-backup restoration and forward-reconciliation acceptance, including fail-closed dispatch fencing. A restored database must never imply that physical Minecraft actions were undone.
+3. Complete applicable repeated forestry, dynamic stock and fuel-policy operating tests. Do not confuse consumption of stored fuel with sustainability.
+4. Reopen the same development world, perform fresh reconciliation and runtime/recipe binding, then finish the remaining finite operational and handover checks.
+5. Review every mandatory requirement against actual evidence before declaring completion.
 
-The colony remains safely held. The computer has not been put to sleep because completion has not been achieved.
+## Inbox and publication policy
 
-## Inbox and publication boundaries
+Automatic/recurring Codex invocation remains disabled and unavailable; manual inbox handoff is retained. The scheduled checker is currently disabled. Empty inbox handling requires zero model calls. No API-key fallback, credential extraction or renewed authentication investigation is being pursued.
 
-The enabled ten-minute task is a **manual-only inbox checker**, not recurring Codex invocation. Automatic model invocation remains disabled and optional/unavailable. No authentication investigation, credential extraction or separately billed API fallback is being pursued. Manual handoff remains available.
-
-The existing daily-reporting workflow is preserved. This repository receives concise documentation through the signed-in browser. Source, binaries, credentials, local databases, coordinates, backups and raw telemetry remain local. Full source fingerprints, physical receipts, preserved failures and precise continuation steps are retained in the local project.
+GitHub receives concise documentation through the signed-in browser. Source, binaries, credentials, raw telemetry, coordinates, databases and world backups remain local. No post-bootstrap items were spawned into the development colony. Quest submission and clean-world activation remain human-gated.

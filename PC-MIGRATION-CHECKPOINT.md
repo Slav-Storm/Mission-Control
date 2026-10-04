@@ -1,62 +1,70 @@
 # PC Mission Control - migration checkpoint
 
-3 October 2026. **Migration resumed, but remains incomplete and blocked by the test environment.** The earlier operator pause is no longer active. No quest has been submitted or claimed, and no clean world has been started.
+4 October 2026. **Migration remains incomplete.** The earlier Java/Lua environment restrictions are resolved. Substantial physical acceptance has passed, but the final development construction/production chain and operational handover have not.
 
 ## Development colony
 
-The drained, reconciled authority handover to epoch 1 previously passed. The latest read-only PC ledger check still shows `CUTOVER_HOLD`, dispatch disabled, no active claims and both protected quest reservations retained: 24 iron ingots and one wooden hook. This is ledger evidence, not a fresh physical inventory inspection.
+The existing run and ten original robots are preserved. The epoch-1 PC authority remains in **CUTOVER_HOLD**, with dispatch disabled and zero active claims. No quest has been submitted or claimed, and no clean world has been started.
 
-The development world and robot software were not modified during this resumption. Minecraft was not running, no world was opened, and no physical command was submitted. The ten original robots, run identity, map knowledge, infrastructure and historical evidence remain preserved. Newly implemented source has not been deployed or granted runtime approval.
+New development-world evidence includes:
 
-Earlier development evidence includes the approved hammer bridge, bounded recovery, protected-inventory reinspection and a bounded exploration job. Live viewer availability was not reverified this session; the viewer regression suite passed.
+- Three real inventory audits overlapped for about nine seconds. Two independent witnesses confirmed the protected 24 iron ingots and wooden hook.
+- A strategic stock delivery completed before background timber work. Two standing timber-buffer cycles completed through seven verified jobs, with reserve robots left available and no model calls.
+- An additional early quest's flint requirement was physically inspected and protected. It reached preparation readiness without submission or claiming.
+- Global legacy state was archived locally and retired from ComputerCraft once. A same-world restart confirmed that the retired global databases did not reappear and physical robot state was unchanged. Recovery journals and identities remain on the computers.
 
-## Preserved physical evidence
+These are completed finite supervised windows. They do not approve unrestricted unattended dispatch or prove a sustainable positive fuel economy.
 
-The following are earlier disposable-world results, not new development-colony acceptance:
+## New isolated physical proofs
 
-- Legitimate turtle refuelling, verified ore extraction and oriented furnace placement passed isolated physical tests.
-- A Production ministry chain processed one raw magnetite with one log into one physically verified iron ingot.
-- A 30-second host acknowledgement blackout verified durable interruption reporting, retained custody and safe hold. A separate normal-production proof passed with matching runtime bytes.
-- An additional installed item quest reached READY_FOR_SUBMISSION through production, protected reservation handoff and two independent inventory witnesses. It was not submitted or claimed; dependency completion remained unknown.
-- Multi-source logistics collected one and two logs from separate inventories and delivered all three. Receipts were archived, jobs retired and the courier ended empty.
+The following tests used disposable Minecraft environments; their terrain and inventories were not imported into the colony:
 
-Correction to the September report: the failed integrated furnace-logistics transfer **was published**, then rejected with TRANSFER_STORAGE_BLOCK_REQUIRED. Later stale-observation errors were secondary. No input transfer or production succeeded in that failed attempt. Its original failure, prepared command, held claims and other evidence remain preserved; it must not be replayed.
+- Furnace-sided input/output access and the full input, fuel, processing, output-collection and storage chain passed with seven real jobs. The earlier TRANSFER_STORAGE_BLOCK_REQUIRED failure remains preserved and was not replayed.
+- One strategic root routed through all seven ministries and completed twelve real jobs, including resource observation, verified extraction, processing and storage construction. An initial byproduct assertion failure was preserved; read-only reconciliation then verified the actual stone-dust byproduct balance without repeating physical work.
+- Standing policies completed eleven real jobs, including three useful robots working concurrently, strategic priority and two cycles per buffer.
+- Selective inventory collection retrieved partial and full quantities from behind the first chest stack. The original first stack was restored, source/cargo deltas were verified, and protected test stock remained unchanged. Four simulated interruption points separately verify that uncertainty is retained rather than replayed.
+- Exact single-batch native crafting witnesses passed for ten bounded recipes. Knowing an exported recipe still does not make it executable.
 
-## Current blockers and changes
+Failed earlier attempts and their diagnoses remain local historical evidence.
 
-The existing Lupa 2.8 test package is present but inaccessible to this session. Neither available Python interpreter provides a usable LuaRuntime import. Downloading a replacement is denied by the session's network policy.
+## Runtime and software
 
-The installed Minecraft Java runtime independently fails a read-only directory probe with AccessDeniedException before the disposable world can load. No permission escalation or filesystem protection changes were attempted.
+Runtime 9 adds narrowly approved same-chest selective collection. Each park/select/collect/restore step is journalled. Protected containers cannot use rearranging selection. Idle inventory refresh accepts only complete authenticated observations of an already registered matching native container; it excludes active claims and preserves ambiguous ownership. Draft work now prevents conflicting plans for the same robot while allowing independent robots to work concurrently.
 
-Added a pinned test dependency and fail-fast Lua/Java preflights before the next fixture can allocate robot identities, write test state, launch Minecraft or submit commands. Regression runners now retain environment diagnostics without silently skipping failed imports. The next physical fixture generation has not been created.
+After a verified stopped-world backup, runtime 9 was installed once on the gateway and ten robots. Identity, recovery and state files were preserved. **Its fresh development startup and reconciliation have not yet passed.** Installation is not acceptance.
 
-Existing source also contains guarded furnace-sided logistics, production-to-quest custody handoff, viewer capability projections and bounded standing stock cycles. Source implementation alone does not prove physical acceptance.
+The approved hard-hammer bridge was already deployed and physically verified in the intended instance. Its native result boundary remains unchanged: no hidden ore coordinates, counts, vein centres or arbitrary world queries.
 
-## Latest verification
+## Current verification
 
 | Check | Result |
 |---|---|
-| PC Node tests | 225 passed |
-| Viewer tests | 25 passed |
-| Telemetry recovery | Passed |
-| Final environment-preflight unit tests | 7 passed |
-| PC Lua suites | 23 blocked before execution |
-| Legacy Lua suites | 21 blocked before execution |
-| New physical acceptance or deployment | Not performed |
+| PC regression | 27 suites passed, including 277 Node cases and all required Lua suites |
+| Existing regression | 22 suites passed, including 25 viewer cases |
+| Held PC service restart | Seven policies, requests, jobs, ownership, inventory and map preserved; zero claims |
+| Local API samples | Maximum 32.76 ms across the measured held-service reads; not a live game-tick benchmark |
+| Viewer | Historical Day 10 reconstruction and return to LIVE verified; offline robots correctly marked stale |
+| Offline clean package | 911 quests and bounded recipe knowledge retained; zero inherited physical state, approvals or capability availability; no world activated |
+| Actual scheduled checker | Three empty checks, including a ten-minute interval, with zero model invocations |
 
-Earlier passing Lua and physical proofs remain historical evidence. They do not replace testing the current source. The migration is not complete.
+The requirement tracker, acceptance matrix, local runbook and continuation checkpoint now distinguish completed evidence from pending work. The old Java/Lua failures remain historical rather than current blockers.
 
-## Remaining order
+## Remaining acceptance and access gate
 
-1. Restore normal test-environment accessibility and pass both preflights and the full regression suites.
-2. Run a fresh isolated furnace-sided access proof, then a fresh integrated furnace-logistics attempt. Preserve every prior attempt.
-3. Complete the single-root seven-ministry physical construction/production chain, followed by an approved exact-runtime development deployment and fresh reconciliation.
-4. Archive and retire global in-game state, preserving recovery journals and proving safe disconnect behaviour.
-5. Run a finite supervised standing-operation window demonstrating useful concurrency, another work cycle, fuel restraint and protected resources.
-6. Complete remaining recovery, performance, regression and final handover criteria before enabling any tested continuous mode.
+Minecraft launched successfully, but remains at its title menu. The native input helper failed twice, including after refreshing and activating the window. Further game input was stopped; no player movement or new physical action occurred. Permission is already granted. The required access action is to open the existing development world and leave the player stationary.
 
-## Codex inbox and publication boundary
+After that, continuation is:
 
-The authentication investigation is closed at the operator's instruction. **Recurring Codex invocation remains disabled; manual inbox fallback is retained.** No further authentication investigation or model invocation occurred during migration resumption. Automatic invocation remains an explicitly unavailable feature; no separately billed API fallback is allowed. See [the authentication report](CODEX-INBOX-AUTHENTICATION.md).
+1. Verify all ten runtime-9 robots, gateway identity, unchanged physical state and protected storage from fresh telemetry.
+2. Capture and bind the new effective static recipe generation before recipe execution.
+3. Resume the existing furnace construction root through a new finite supervised window. Do not recreate the root, rerun deployment or replay prior physical attempts.
+4. Complete applicable development integration, recovery, fuel/storage policy, live performance and final operational acceptance.
+5. Sign off only when the remaining mandatory criteria genuinely pass.
 
-Precise source manifests, tests, checkpoints and failure evidence remain local. Daily-reporting functionality is preserved. Source, binaries, credentials, databases, exact coordinates, backups and raw telemetry are not published. This repository receives concise documentation through the signed-in browser.
+The colony remains safely held. The computer has not been put to sleep because completion has not been achieved.
+
+## Inbox and publication boundaries
+
+The enabled ten-minute task is a **manual-only inbox checker**, not recurring Codex invocation. Automatic model invocation remains disabled and optional/unavailable. No authentication investigation, credential extraction or separately billed API fallback is being pursued. Manual handoff remains available.
+
+The existing daily-reporting workflow is preserved. This repository receives concise documentation through the signed-in browser. Source, binaries, credentials, local databases, coordinates, backups and raw telemetry remain local. Full source fingerprints, physical receipts, preserved failures and precise continuation steps are retained in the local project.

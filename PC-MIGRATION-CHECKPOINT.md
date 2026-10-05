@@ -1,5 +1,19 @@
 # PC Mission Control migration checkpoint
 
+## Latest continuation: Trial 02, 5 October 2026
+
+**Migration remains accepted. Fresh-World Autonomy Trial 02 finished at LEVEL 2 — EARLY AUTONOMY.** Native fresh commissioning, bounded Director opening planning and epoch-zero viewer/history are implemented and independently tested. The new colony completed eight autonomous surveys, growing observed cells from 30 to 56. All ten turtles survived; 22 of 51,200 bootstrap fuel was consumed. No resources were acquired or production chains completed. Sustained/concurrent clean-start progression remains unproven.
+
+The Director stopped at `CAPABILITY_REQUIRED / OPENING_RESOURCE_ACQUISITION_OR_EXTENDED_SEARCH`, with crafting unavailable. The five-day target was not padded with idle time. The operating-and-drain window was about 460 seconds and crossed one sampled Minecraft-day boundary; exact fractional operational days are unavailable.
+
+Current continuation source passed 30 PC suites/412 Node tests and required Lua coverage, plus 22 legacy/viewer suites/30 viewer tests. A separate real fixture accepted commissioning before Trial 02. Trial 02 verified the actual epoch-zero-to-live browser transition and historical/LIVE return.
+
+Development and Trial 01 remain byte-identical to their preserved world archives. Trial 02 is saved and archived, dispatch held, claims zero, and Minecraft/PC/viewer services stopped. No quests were submitted or claimed. Automatic Codex invocation remains disabled. No final filmed run was started.
+
+Read [Trial 02's full report](FRESH-WORLD-AUTONOMY-TRIAL-02.md), including the four-turtle snow-layer bootstrap remainder intervention and evidence matrix. Next work is independently tested clean-start resource acquisition and crafting, followed by review before Trial 03. Do not replay either trial's bootstrap, recommit its authority or resubmit its stopped root.
+
+## Accepted migration and Trial 01 record
+
 5 October 2026 — **PC_MISSION_CONTROL_MIGRATION_COMPLETE**
 
 Phase A has passed its applicable acceptance gates. The seven deterministic ministries operate through the PC ledger and one epoch-fenced dispatcher. The development colony and its ten original robots remain intact. Protected24iron, wooden hook and flint were physically re-inspected; no quest was submitted or claimed.

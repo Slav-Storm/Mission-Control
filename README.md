@@ -1,5 +1,7 @@
 # Mission Control
 
+> **Latest — 5 October 2026:** PC migration is accepted. [Trial 02](FRESH-WORLD-AUTONOMY-TRIAL-02.md) reached **Level 2: Early Autonomy** after fresh commissioning and eight autonomous surveys. Resource acquisition/crafting remains the next clean-start blocker. Worlds are saved and dispatch held. See the [current checkpoint](PC-MIGRATION-CHECKPOINT.md) and [government/architecture report](PC-MISSION-CONTROL-GOVERNMENT-AND-ARCHITECTURE.md). Older dated sections below are historical.
+
 An immobile-player Minecraft challenge in Monifactory expert mode. Ten specialised
 programmable turtles explore, mine, craft and transport resources while their human
 commander remains at Mission Control. The initial bootstrap is permanently sealed.
@@ -92,11 +94,3 @@ The local interface now provides bounded technology-target planning using
 installed recipes, pack overrides, quest prerequisites and current colony
 capabilities. See [TECHNOLOGY-PLANNING.md](TECHNOLOGY-PLANNING.md) for the current
 headless development checkpoint, verified recovery infrastructure and limits.
-
-
-## Latest authentication checkpoint — 3 October 2026
-
-See the [full Codex inbox authentication report](CODEX-INBOX-AUTHENTICATION.md)
-for the supported ChatGPT session path, safeguards, test results and current
-manual-invocation limitation. Recurring invocation remains disabled. The wider
-PC migration is still incomplete; earlier dated colony checkpoints are historical.

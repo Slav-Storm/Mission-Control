@@ -2,6 +2,8 @@
 
 5 October 2026 · Migration source baseline118 · Edge runtime10
 
+> Continuation: the accepted migration below remains historical baseline118. Fresh-start source122 subsequently added native commissioning, a bounded opening Director and epoch-zero viewing. [Trial 02](FRESH-WORLD-AUTONOMY-TRIAL-02.md) reached Level 2 with eight autonomous surveys; it did not demonstrate sustained fresh-world production. The new behavior and its limits are documented in section 12 below.
+
 **PC_MISSION_CONTROL_MIGRATION_COMPLETE**
 
 **Post-publication finding:** the separately authorized [Trial 01](FRESH-WORLD-AUTONOMY-TRIAL-01.md) subsequently exposed missing fresh-run commissioning, broad opening-strategy and fresh viewer initialization. It stopped before operational dispatch. The development migration is accepted within the scope below; **fresh-world autonomy has not passed**. This is not approval or evidence for the final filmed run.
@@ -199,3 +201,17 @@ The ten-minute checker remains disabled/manual-only. Authentication investigatio
 The migration is accepted; the next authorized experiment is a new disposable clean-start trial after this report is safely published. It must use a new RUN_ID and portable knowledge only, record history from initialization and preserve ordinary failures rather than manually manufacturing success. It is not the final filmed colony.
 
 Quest submission/rewards, final-run activation, challenge changes, hidden terrain inspection and post-bootstrap spawning remain prohibited without their separate human authorization. Robot11, broader industrial processes and sustainable fuel are honest technology/policy work ahead. A successful migration supplies the evidence-based government needed to study those problems; it does not assert they are already solved.
+
+## 12. Fresh-run commissioning and opening strategy continuation
+
+A new run now has a native origin distinct from restoration and migration. The fresh initializer creates an empty physical namespace and an unknown-day initialization event. Authenticated native bootstrap observations establish gateway identity, each turtle's own pose, upgrades, cargo and fuel. The PC enrolls new logical robot identities and verifies bootstrap reality; no development or archived-run state is accepted as a starting physical witness.
+
+The fresh transaction binds approved portable runtime bytes and a current installed recipe generation, collects every member's readiness, commits the first authority epoch, then collects operational acknowledgements. It remains held until a separate finite permit binds the run, epoch, runtime, cohort, strategic roots, expiry and job budget. Legacy migration and its reconciliation requirements remain intact. Recipes and executable implementations are portable; physical machines, production providers and execution witnesses are not inherited.
+
+The Director now handles `BEGIN_MONIFACTORY_PROGRESSION`. A bounded planner compares verified capability/inventory state with a small set of early infrastructure needs and recipe requirements. It routes supported work through the existing ministries, replans after meaningful changes and returns explicit capability blockers. The first implementation allows one unfinished opening child and eight short surveys before stopping for reassessment. It is not a complete autonomous technology planner and does not invoke Codex automatically.
+
+The existing viewer accepts empty epoch-zero runs and authenticated bootstrap observations. Unknown-day initialization is separate from the first observed Minecraft day. Commissioning transitions to LIVE in the same run/history; historical viewing remains isolated from current physical authority.
+
+Independent current-source acceptance passed 30 PC suites/412 Node tests plus required Lua coverage, and 22 legacy/viewer suites/30 viewer tests. A real isolated fixture commissioned eleven members and verified two Director-selected surveys before Trial 02. Trial 02 independently commissioned its own exact ten-turtle bootstrap, then verified eight surveys. Its effective static catalog contained 73,337 recipes, with 54,572 parsed and 18,765 unsupported; those figures do not change the earlier development acceptance counts or grant fresh production capabilities.
+
+Trial 02 stopped at opening resource acquisition/extended search with crafting unavailable. Its map grew from 30 to 56 cells, fuel fell by 22, and no materials or infrastructure were produced. Peak physical concurrency was one. The next engineering boundary is a legitimate bootstrap-safe acquisition/crafting path, not another migration or a larger bootstrap allowance. Development, Trial 01 and Trial 02 remain separate preserved worlds. No final filmed run is authorized by this result.

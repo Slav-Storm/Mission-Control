@@ -4,6 +4,8 @@
 
 **PC_MISSION_CONTROL_MIGRATION_COMPLETE**
 
+**Post-publication finding:** the separately authorized [Trial 01](FRESH-WORLD-AUTONOMY-TRIAL-01.md) subsequently exposed missing fresh-run commissioning, broad opening-strategy and fresh viewer initialization. It stopped before operational dispatch. The development migration is accepted within the scope below; **fresh-world autonomy has not passed**. This is not approval or evidence for the final filmed run.
+
 The applicable PC migration is accepted. Seven deterministic ministries now share one persistent PC ledger and one physical dispatch authority. Minecraft remains physical truth. The preserved development colony still contains the ten bootstrap robots; protected Iron Supply, Movin’ Around and flint preparation remain unsubmitted. A disposable fresh-start trial is a separate next phase, not evidence claimed in this report. The final filmed/YouTube run has not begun.
 
 Acceptance means the supported paths were demonstrated, not that every Monifactory recipe can execute or that the colony is self-sustaining. Dispatch defaults to a safe hold. Explicit finite permits bound the active objectives, robot cohort, approved software, job count and expiry. Routine permitted operations require no Codex calls.

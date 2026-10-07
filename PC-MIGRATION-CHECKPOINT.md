@@ -1,6 +1,18 @@
 # PC Mission Control migration checkpoint
 
-## Latest continuation: Trial 02, 5 October 2026
+## Latest continuation: Trial 03, 7 October 2026
+
+**Migration remains accepted. Trial 03 is LEVEL 2 — EARLY AUTONOMY; its first-infrastructure engineering objective remains partial.** Three preserved attempts completed 90 native surveys with no physical job failures, three-way concurrency and map growth from 30 to 492 observed cells. They consumed 124 of 51,200 inherited movement fuel. No resource acquisition, production or infrastructure was achieved in the actual trial.
+
+Conservative recipe restart reconciliation, extended concurrent surveys, no-chest turtle-cargo acquisition, prompt safe hold and bounded dependency batching are implemented and tested. Separate Minecraft fixtures verified Director-led cobblestone acquisition and restart recovery; those resources never entered Trial 03. The exact bootstrap has no workbench/crafting API. Final search stopped at an explicit 128-request planning ceiling; this does not prove resource exhaustion.
+
+Current source passed 430 Node tests/all 30 PC suites including Lua, and 22 legacy/viewer suites including 30 viewer tests. Development and Trials 01/02 remain byte-identical by opaque preservation hashes. All earlier failures and physical receipts remain preserved.
+
+Trial 03 is saved and open at the paused Game Menu. PC service and observer run locally in CUTOVER_HOLD, dispatch disabled, zero active claims. No quests were claimed, no extra resources supplied, no final filmed run started, and recurring Codex invocation remains disabled.
+
+Read the [full Trial 03 report](FRESH-WORLD-AUTONOMY-TRIAL-03.md) and [eight engineering decisions](TRIAL-03-ENGINEERING-DECISIONS.md). Remaining work is a bounded longer-lived strategic lifecycle and a legitimate first-workbench path. Do not replay completed jobs, bootstrap, old roots or authority commitment. Earlier sections below are historical checkpoints.
+
+## Earlier continuation: Trial 02, 5 October 2026
 
 **Migration remains accepted. Fresh-World Autonomy Trial 02 finished at LEVEL 2 — EARLY AUTONOMY.** Native fresh commissioning, bounded Director opening planning and epoch-zero viewer/history are implemented and independently tested. The new colony completed eight autonomous surveys, growing observed cells from 30 to 56. All ten turtles survived; 22 of 51,200 bootstrap fuel was consumed. No resources were acquired or production chains completed. Sustained/concurrent clean-start progression remains unproven.
 

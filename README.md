@@ -1,6 +1,6 @@
 # Mission Control
 
-> **Latest — 5 October 2026:** PC migration is accepted. [Trial 02](FRESH-WORLD-AUTONOMY-TRIAL-02.md) reached **Level 2: Early Autonomy** after fresh commissioning and eight autonomous surveys. Resource acquisition/crafting remains the next clean-start blocker. Worlds are saved and dispatch held. See the [current checkpoint](PC-MIGRATION-CHECKPOINT.md) and [government/architecture report](PC-MISSION-CONTROL-GOVERNMENT-AND-ARCHITECTURE.md). Older dated sections below are historical.
+> **Latest - 7 October 2026:** PC migration remains accepted. [Trial 03](FRESH-WORLD-AUTONOMY-TRIAL-03.md) reached **Level 2: Early Autonomy** with 90 verified surveys, three concurrent robots and 492 observed cells. Actual resource acquisition and first infrastructure remain unachieved; isolated acquisition passed. Minecraft is saved/open/paused with dispatch held. Read the [decision journal summary](TRIAL-03-ENGINEERING-DECISIONS.md) and [current checkpoint](PC-MIGRATION-CHECKPOINT.md). Older dated sections are historical.
 
 An immobile-player Minecraft challenge in Monifactory expert mode. Ten specialised
 programmable turtles explore, mine, craft and transport resources while their human
